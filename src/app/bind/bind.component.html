@@ -1,0 +1,14 @@
+<div>
+  <label> First Name:</label>
+  <input type="text" [ngModel]="firstname"(ngModelChnage)="firstname=$event" #first> 
+  </div>
+
+  <br>
+  <div>
+  <label> First Name:</label>
+  <input type="text" [ngModel]="lastname"(ngModelChnage)="lastname=$event" #last> 
+  </div>
+  <br>
+  <button (click)="submit(first,last)"> SUBMIT </button>
+  <br>
+  <h3> My Full Name is :{{title}} </h3>
